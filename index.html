@@ -4,149 +4,429 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SST Revision Questions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        h2 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             color: #333;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
-        ul {
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
             background: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
         }
-        li {
-            margin-bottom: 10px;
+        .container:hover {
+            transform: translateY(-5px);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
         .pdf-button {
             display: block;
-            width: 200px;
+            width: 230px;
             text-align: center;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
+            margin: 30px auto;
+            padding: 15px;
+            background: #3498db;
+            color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(52,152,219,0.4);
+        }
+        .pdf-button:hover {
+            background: #2980b9;
+            transform: translateY(-5px);
+        }
+        ul {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            color: #444;
+        }
+        li {
+            margin: 12px 0;
+            line-height: 1.6;
+        }
+        ul ul {
+            margin-top: 10px;
+            padding-left: 25px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px;
+                padding: 25px;
+            }
+            .pdf-button {
+                width: 190px;
+                padding: 13px;
+            }
         }
     </style>
+
 </head>
 <body>
-    <h1>SST Revision Questions</h1>
-    
-    <a href="revision_questions.pdf" class="pdf-button" target="_blank">Download PDF</a>
-    
-    <h2>India Size & Location</h2>
-    <ul>
-        <li>Write a note on location and size of India.</li>
-        <li>What is meant by the standard Meridian? Explain its importance.</li>
-        <li>Why the difference between duration of day and night is hardly felt at Kashmir but not in Kanyakumari?</li>
-        <li>How is the location of India advantageous? (Explain in detail)</li>
-        <li>Write a note on neighbors of India.</li>
-        <li>Answer the following terms:
-            <ul>
-                <li>Latitude</li>
-                <li>Longitude</li>
-                <li>Suez Canal</li>
-                <li>Palk Strait</li>
-                <li>Longest Border</li>
-            </ul>
+    <div class="container">
+        <h1>SST Revision Questions</h1>
+        <a href="que.pdf" class="pdf-button" target="_blank">Download PDF</a>
+
+        <h2>India Size & Location</h2>
+        <ul>
+            <li>Write a note on location and size of India.</li>
+            <li>What is meant by the standard Meridian? Explain its importance.</li>
+            <li>Why the difference between duration of day and night is hardly felt at Kashmir but not in Kanyakumari?</li>
+            <li>How is the location of India advantageous? (Explain in detail)</li>
+            <li>Write a note on neighbors of India.</li>
+            <li>Answer the following terms:
+                <ul>
+                    <li>Latitude</li>
+                    <li>Longitude</li>
+                    <li>Suez Canal</li>
+                    <li>Palk Strait</li>
+                    <li>Longest Border</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Physical Features of India</h2>
+        <ul>
+            <li>Write the name of different physical features of India.</li>
+            <li>Short note on Himalayan mountains.</li>
+            <li>Explain in detail about different ranges of Himalayas.</li>
+            <li>Differentiate between:
+                <ul>
+                    <li>Central Highlands & Deccan Plateau</li>
+                    <li>Eastern Ghats & Western Ghats</li>
+                    <li>Eastern Coastal Plain & Western Coastal Plain</li>
+                    <li>Andaman & Nicobar & Lakshadweep Island</li>
+                </ul>
+            </li>
+            <li>Write a short note on Indian desert.</li>
+            <li>Key terms:
+                <ul>
+                    <li>Doab</li>
+                    <li>Highest Peak Of India</li>
+                    <li>Highest Peak Of World</li>
+                </ul>
+            </li>
+            <li>Write a detailed note on northern plains of India.</li>
+            <li>How can you say that all the physical features of India are complementary to each other?</li>
+        </ul>
+
+        <h2>Climate</h2>
+        <ul>
+            <li>Differentiate between climate and weather.</li>
+            <li>What are the different factors responsible for differences in climate conditions? (Hint: Climate Controls)</li>
+            <li>Explain in detail about all the seasons of India.</li>
+            <li>Why is monsoon considered a unifying bond?</li>
+            <li>Differentiate between advancing monsoon and retreating monsoon season.</li>
+            <li>Key terms:
+                <ul>
+                    <li>Monsoon</li>
+                    <li>Loo</li>
+                    <li>Mango Shower</li>
+                    <li>Kal Baisakhi</li>
+                    <li>ITCZ</li>
+                    <li>Ferrel’s Law</li>
+                    <li>Corolis Force</li>
+                    <li>Jet Stream</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Population</h2>
+        <ul>
+            <li>Key Terms:
+                <ul>
+                    <li>Census</li>
+                    <li>Annual Growth Rate</li>
+                    <li>Migration</li>
+                </ul>
+            </li>
+            <li>Explain the variations in population size and distribution in India.</li>
+            <li>Define the term “Population Density.”</li>
+            <li>What is meant by Population Growth (Population Change)? Explain various factors responsible for this.</li>
+            <li>Define Adolescent Population in India.</li>
+            <li>Write a detailed note on “National Population Policy.”</li>
+            <li>Highest Sex Ratio in India.</li>
+            <li>Write a note on Population Density of India.</li>
+            <li>Why has the rate of population growth in India been declining since 1981?</li>
+            <li>How is migration a determinant factor of population change?</li>
+            <li>Distinguish between Population Growth and Population Change.</li>
+            <li>What are the advantages of having a healthy population?</li>
+            <li>Explain in detail about the various features of National Population Policy 2000.</li>
+            <li>Map work:
+                <ul>
+                    <li>High Population density</li>
+                    <li>Low Population density</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>People as a Resource</h2>
+        <ul>
+            <li>Define the term:
+        <ul>
+            <li>People As A Resource</li>
+            <li>Mid-Day Meal</li>
+            <li>Unemployment</li>
+            <li>Green Revolution</li>
+            <li>IMR (Infant Mortality Rate)</li>
+            <li>GDP (Gross Domestic Product)</li>
+        </ul>
         </li>
-    </ul>
-    
-    <h2>Physical Features of India</h2>
-    <ul>
-        <li>Write the name of different physical features of India.</li>
-        <li>Short note on Himalayan mountains.</li>
-        <li>Explain in detail about different ranges of Himalayas.</li>
+        <li>How are Human Resources different from other resources like land & physical capital?</li>
+        <li>Explain the role of education in human capital formation.</li>
+        <li>Explain the role of health in human capital formation.</li>
+        <li>[Hint: <img src="Hint1.png" alt="Hint Image"/>]</li>
+        <li>Differentiate between Primary, Secondary, and Tertiary sectors/activities based on their nature.</li>
+        <li>What are the causes of unemployment?</li>
+        <li>Explain the types of unemployment.</li>
+        <li>Discuss the effects of unemployment.</li>
         <li>Differentiate between:
-            <ul>
-                <li>Central Highlands & Deccan Plateau</li>
-                <li>Eastern Ghats & Western Ghats</li>
-                <li>Eastern Coastal Plain & Western Coastal Plain</li>
-                <li>Andaman & Nicobar & Lakshadweep Island</li>
-            </ul>
+        <ul>
+            <li>Economic Activities & Non-Economic Activities</li>
+            <li>Market Activity & Non-Market Activity</li>
+        </ul>
         </li>
-        <li>Write a short note on Indian desert.</li>
-        <li>Key terms:
-            <ul>
-                <li>Doab</li>
-                <li>Highest Peak Of India</li>
-                <li>Highest Peak Of World</li>
-            </ul>
-        </li>
-        <li>Write a detailed note on northern plains of India.</li>
-        <li>How can you say that all the physical features of India are complementary to each other?</li>
-    </ul>
-    
-    <h2>Climate</h2>
+            <li>How can we create employment opportunities in rural areas?</li>
+    <li>Explain the characteristics and components of the Green Revolution.</li>
+</ul>
+
+<h2>Poverty as a Challenge</h2>
+<ul>
+    <li>Define the terms:
+        <ul>
+            <li>Poverty</li>
+            <li>Social Exclusion</li>
+            <li>Vulnerability</li>
+        </ul>
+    </li>
+    <li>How Poverty is seen by social scientists?</li>
+    <li>What is poverty line? How it is determined In India?</li>
+    <li>Social groups vulnerable in India?</li>
+    <li>Explain in detail about Global Poverty scenario across the world.</li>
+    <li>What are causes of Poverty?</li>
+    <li>Do you think that present methodology of poverty estimation is appropriate?</li>
+    <li>Who are the poorest of the poor?</li>
+    <li>Describe the current government strategy of poverty alleviation:</li>
     <ul>
-        <li>Differentiate between climate and weather.</li>
-        <li>What are the different factors responsible for differences in climate conditions? (Hint: Climate Controls)</li>
-        <li>Explain in detail about all the seasons of India.</li>
-        <li>Why is monsoon considered a unifying bond?</li>
-        <li>Differentiate between advancing monsoon and retreating monsoon season.</li>
-        <li>Key terms:
-            <ul>
-                <li>Monsoon</li>
-                <li>Loo</li>
-                <li>Mango Shower</li>
-                <li>Kal Baisakhi</li>
-                <li>ITCZ</li>
-                <li>Ferrel’s Law</li>
-                <li>Corolis Force</li>
-                <li>Jet Stream</li>
-            </ul>
-        </li>
+        <li>NREGA (Mahatma Gandhi)</li>
+        <li>PMRY</li>
+        <li>REGP</li>
+        <li>PMGY</li>
+        <li>AAY</li>
     </ul>
-    
-    <h2>Population</h2>
-    <ul>
-        <li>Key Terms:
-            <ul>
-                <li>Census</li>
-                <li>Annual Growth Rate</li>
-                <li>Migration</li>
-            </ul>
-        </li>
-        <li>Explain the variations in population size and distribution in India.</li>
-        <li>Define the term “Population Density.”</li>
-        <li>What is meant by Population Growth (Population Change)? Explain various factors responsible for this.</li>
-        <li>Define Adolescent Population in India.</li>
-        <li>Write a detailed note on “National Population Policy.”</li>
-        <li>Highest Sex Ratio in India.</li>
-        <li>Write a note on Population Density of India.</li>
-        <li>Why has the rate of population growth in India been declining since 1981?</li>
-        <li>How is migration a determinant factor of population change?</li>
-        <li>Distinguish between Population Growth and Population Change.</li>
-        <li>What are the advantages of having a healthy population?</li>
-        <li>Explain in detail about the various features of National Population Policy 2000.</li>
-        <li>Map work:
-            <ul>
-                <li>High Population density</li>
-                <li>Low Population density</li>
-            </ul>
-        </li>
-    </ul>
-    
-    <h2>Other Questions</h2>
-    <ul>
-        <li>Explain various functions performed by the President of India.</li>
-        <li>Explain the term PDS. Explain its current status also.</li>
-        <li>Write the name of different stages of elections in India. Also, describe the importance of the voters list in your own words.</li>
-        <li>Describe the characteristics and features of cold weather season in India.</li>
-        <li>Define the term monsoon and food security.</li>
-        <li>Explain the causes of food security in India.</li>
-        <li>Why do we need food security?</li>
-        <li>Explain electoral constituencies.</li>
-        <li>Power and function of the Supreme Court.</li>
-        <li>How can you say that all the physical features of India are complementary to each other?</li>
-    </ul>
+</ul>
+
+<h2>What is Democracy and Why Democracy?</h2>
+<ul>
+    <li>Define the terms:
+        <ul>
+            <li>Democracy</li>
+            <li>Dictatorship</li>
+        </ul>
+    </li>
+    <li>Why the following countries are not called a democratic country:
+        <ul>
+            <li>Pakistan</li>
+            <li>Mexico</li>
+            <li>China</li>
+            <li>Zimbabwe</li>
+        </ul>
+    </li>
+    <li>Features/Merits of Democratic Country.</li>
+    <li>Criticize/Demerits of Democratic Country.</li>
+    <li>Differentiate between:
+        <ul>
+            <li>Direct democracy</li>
+            <li>Indirect democracy</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Constitutional Design</h2>
+<ul>
+    <li>Define:
+        <ul>
+            <li>Apartheid System</li>
+            <li>Segregation</li>
+        </ul>
+    </li>
+    <li>Differentiate Between:
+        <ul>
+            <li>Democratic Country</li>
+            <li>Non-Democratic Country</li>
+        </ul>
+    </li>
+    <li>What is Constitution? Why do we need a Constitution?</li>
+    <li>Write any five guiding values of Constitution.</li>
+    <li>Define Preamble.</li>
+    <li>What are the silent features of the democracy?</li>
+</ul>
+
+<h2>Electoral Politics</h2>
+<ul>
+    <li>Define the term:
+        <ul>
+            <li>Elections</li>
+            <li>Constituency</li>
+            <li>Rigging</li>
+            <li>Voter-turnout</li>
+            <li>Incumbent</li>
+        </ul>
+    </li>
+    <li>Why do we need elections?</li>
+    <li>Explain what makes election in India democratic?</li>
+    <li>What are the various challenges to free and fair elections In India?</li>
+    <li>Explain the different stages of elections.</li>
+    <li>Write about the Interstate disparities in India.</li>
+    <li>Define the term:
+        <ul>
+            <li>Ballot Paper</li>
+            <li>Ballot Box</li>
+            <li>E.V.M</li>
+            <li>General Election</li>
+            <li>Mid Term Election</li>
+            <li>Bye Election</li>
+        </ul>
+    </li>
+    <li>Which of following statements about reason for conducting elections are false?
+        <ul>
+            <li>(a) Elections enable people to judge the performance of the government.</li>
+            <li>(b) People select the representative of their choice in an election.</li>
+            <li>(c) Elections enable people to evaluate the performance of the judiciary.</li>
+            <li>(d) People can indicate which policies they prefer.</li>
+        </ul>
+    </li>
+    <li>Which of these is not a good reason to say that Indian elections are democratic?
+        <ul>
+            <li>(a) India has the largest number of voters in the world.</li>
+            <li>(b) India’s Election Commission is very powerful.</li>
+            <li>(c) In India, everyone above the age of 18 has a right to vote.</li>
+            <li>(d) In India, the losing parties accept the electoral verdict.</li>
+        </ul>
+    </li>
+    <li>Match: <img src="match.png" alt="Hint Image"/>]</li>
+    <li>Can we draw the following conclusions from the information given in this chapter? Give two facts to support your position for each of these.
+        <ul>
+            <li>(a) E.C. of India does not have enough powers to conduct free and fair elections in the country.</li>
+            <li>(b) There is a high level of popular participation in the elections in our country.</li>
+            <li>(c) It is easy for party in power to win election.</li>
+            <li>(d) Many reforms are needed to make our elections completely free and fair.</li>
+        </ul>
+    </li>
+    <li>Here are some reports of electoral malpractices from different parts of world. Is there anything that these countries can learn from India to improve their elections? What you will suggest in each case?
+        <ul>
+            <li>(a) During an election in Nigeria, the officer in charge of counting votes deliberately increased the votes of one candidate and declared him elected. The court later found out that more than five lakh exercises votes cast for one candidate were counted in favour of another.</li>
+            <li>(b) Just before elections in Fiji, a pamphlet was distributed warning voters that a vote for former Prime Minister, Mahendra Chaudhry will lead to bloodshed. This was a threat to voters of Indian origin.</li>
+            <li>(c) In the US, each state has its own method of voting, its own procedure of counting, and its own authority for conducting elections. Authorities in the state of Florida took many controversial decisions that favoured Mr. Bush in the presidential elections in 2000. But no one could change those decisions.</li>
+        </ul>
+    </li>
+    <li>Here are some reports of malpractices in Indian elections. Identify what the problem in each case is. What should be done to correct the situation?
+        <ul>
+            <li>(a) Following the announcement of elections, the minister promised to provide financial aid to reopen the closed sugar mill.</li>
+            <li>(b) Opposition parties alleged that their statements and campaign were not given due attention in Doordarshan and All India Radio.</li>
+            <li>(c) An inquiry by the Election Commission showed that electoral rolls of a state contain the name of 20 lakh fake voters.</li>
+            <li>(d) The hoodlums of a political party were moving with guns, physically preventing supporters of other political parties to meet the voters and attacking meetings of other parties.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Working of Institutions</h2>
+<ul>
+    <li>Write Functions and Powers of:
+        <ul>
+            <li>Prime Minister</li>
+            <li>President</li>
+            <li>Judiciary</li>
+        </ul>
+    </li>
+    <li>What are the two types of executives? Also write the meaning of executive.</li>
+    <li>What was Mandal Commission?</li>
+    <li>Differentiate between:
+        <ul>
+            <li>Lok Sabha</li>
+            <li>Rajya Sabha</li>
+        </ul>
+    </li>
+    <li>Which house of parliament is more powerful?</li>
+</ul>
+
+<h2>French Revolution</h2>
+<ul>
+    <li>What were the reasons behind empty treasury upon Louis XVI accession?</li>
+    <li>Describe the social structure of France in the old regime. (Hint: Before 1789, 3 Estates)</li>
+    <li>What was the reason behind the subsistence crisis in France?</li>
+    <li>Role of philosophers in French Revolution.</li>
+    <li>Explain the formation of National Assembly.</li>
+    <li>How did France become a constitutional monarchy?</li>
+    <li>Write a short note on Jacobin Club.</li>
+    <li>Who was Robespierre? Why is the period from 1793-1794 referred to as the “Reign of Terror”?</li>
+    <li>Why did women participate in the French Revolution?</li>
+    <li>Explain the process of triangular slave trade in Europe.</li>
+    <li>Explain the impact of Napoleon on French society.</li>
+    <li>Various political symbols used by French revolutionaries to inspire the people.</li>
+    <li>Short note on Olympe de Gouges.</li>
+</ul>
+
+<h2>Socialism in Europe & Russian Revolution</h2>
+<ul>
+    <li>Who were Liberals?</li>
+    <li>Who were Conservatives?</li>
+    <li>Who were Radicals?</li>
+    <li>Describe the problems associated with industrialization in Europe.</li>
+    <li>Define the term Socialism and their emergence in Europe.</li>
+    <li>Explain the Russian Empire in 1914. (Hint: Social, Political & Economic conditions)</li>
+    <li>Explain the event of Bloody Sunday in your own words.</li>
+    <li>Describe the impact of World War I on Europe.</li>
+    <li>Write the events of the February Revolution.</li>
+    <li>Who was Lenin?</li>
+    <li>Write the events of the October Revolution and their impact on Europe.</li>
+    <li>Explain the policy of collectivization of Stalin.</li>
+    <li>What were the main changes brought by Bolsheviks immediately after the October Revolution?</li>
+    <li>Write a few lines about:
+        <ul>
+            <li>Kulaks</li>
+            <li>Duma</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Other Questions</h2>
+<ul>
+    <li>Explain the term PDS. Explain its current status also.</li>
+    <li>Write the name of different stages of elections in India. Also describe the importance of the voters' list in your own words.</li>
+    <li>Define the term monsoon and food security.</li>
+    <li>Explain the causes of food security in India.</li>
+    <li>Why do we need food security?</li>
+    <li>Explain Electoral constituencies.</li>
+    <li>Powers and functions of the Supreme Court.</li>
+    <li>How can you say that all the physical features of India are complementary to each other?</li>
+</ul>
+
+
+    <footer>&copy; 2025 SST Revision Hub. All rights reserved.</footer>
 </body>
 </html>
